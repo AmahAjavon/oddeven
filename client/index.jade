@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  head
+    title OddEven
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/style.css')
+  body
+    .container
+      form
+        .jumbotron.text-center
+          p.typehead-lg
+            input#first.text-center(type='text', autofocus='true', placeholder='Enter numbers')
+            input#second.text-center(type='text', autofocus='true', placeholder='Enter numbers')
+            button#answer.btn.btn-lg.btn-primary GO
+            input#total.text-center(type='text', autofocus='true', placeholder='total')
+          h4 Odds
+            ul#odd
+          h4 Even
+            ul#even 
+    
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+    script(src='/main.js')
